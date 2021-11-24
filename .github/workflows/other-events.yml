@@ -1,8 +1,8 @@
 name: "Other event types"
 on:
   issue_comment:
-  pull_request_target:
-    branches: [ master ]
+  # pull_request_target:
+  #  branches: [ master ]
 
 permissions:
   issues: write    # for create-issue job
