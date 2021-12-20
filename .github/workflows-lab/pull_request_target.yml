@@ -8,6 +8,7 @@ jobs:
     name: Create tracking issue
     runs-on: ubuntu-latest
     steps:
+      - run: cat $GITHUB_EVENT_PATH
       - name: print fork repo's name
         if: github.event.pull_request.head.repo.owner.login != 'hashtagchris'
         run: echo ${{ github.event.pull_request.head.repo.owner.login }}
